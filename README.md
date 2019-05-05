@@ -27,6 +27,3 @@ Quick install
     * `npm run prod`
 
 
-*  
-
-
