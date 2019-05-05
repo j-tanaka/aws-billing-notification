@@ -41,7 +41,7 @@ module.exports.publishBillingNotification = async (event) => {
     })
     const sns_param = {
       TopicArn: process.env.SNS_TOPIC_ARN, 
-      Message: JSON.stringify(data, null, 2),      
+      Message: text,      
     }
     console.log(text);
     let result = await sns.publish(sns_param).promise();
