@@ -1,0 +1,23 @@
+{
+  "name": "aws-billing-notification",
+  "version": "0.0.1",
+  "description": "This applicaion nofify your aws cost with email every day on 0:00 AM (UTC).",
+  "main": "handler.js",
+  "scripts": {
+    "test-local": "serverless invoke local --function publishBillingNotification",
+    "test": "serverless invoke --function publishBillingNotification",
+    "prod": "serverless invoke --stage=prod --function publishBillingNotification",
+    "upload": "serverless deploy --stage=dev",
+    "deploy": "serverless deploy --stage=prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.449.0",
+    "dateformat": "^3.0.3"
+  },
+  "devDependencies": {
+    "serverless-pseudo-parameters": "^2.4.0"
+  }
+}
